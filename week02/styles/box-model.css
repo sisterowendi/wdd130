@@ -24,7 +24,7 @@ blockquote {
 
 cite {
     display:block;
-    top-border: 1px dotted #fff;
+    border-top: 1px dotted #fff;
     text-align: right;
     font-size: small;
 	
