@@ -29,19 +29,27 @@ body{
 
 header {
        text-align: left;
-       background-color: var("--nav-hover-background-color");      
+       background-color: var("--nav-hover-background-color");    
 }
 
+h1 {
+    position: absolute;
+    font-size: xx-large;
+    font-style: var(--heading-font);
+    top: 200px;
+    right: 350px;
+    color: white;
+}
 
-.herodiv {
+.hero {
     margin: 10px auto;
 }
-.herodiv img {
+
+.hero img {
     position: relative;
     width: 100%;
     height: auto;
     display: block;
-
 }
 
 h1 {
@@ -58,6 +66,7 @@ article img {
     float:right;
     top:300px;
     right:100px;
+    border-color: #221E22;
 
 }
 
@@ -68,17 +77,16 @@ article img {
    left: 250px;
    width: 45rem;
    color: white;
+
 }
 
 h2{
     text-align: left;
 } 
+
 section img {
     width: 25rem;
     padding: auto;
-    left:10px
+    left:10px;
 }
 
-footer nav {
-    size-adjust: xx small;
-}
