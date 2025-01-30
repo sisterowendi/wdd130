@@ -49,8 +49,30 @@ aside{
     background-color:black;
     color: yellow;
     text-align: center;
+}
+.box{
+    
+
+}
+    
+aside{
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 aside img {
     width:200px;
     height: auto;
@@ -71,17 +93,6 @@ footer{
 
 /* class selectors */
 
-.box {
-    margin: 1rem ;
-    border: 2px solid rgba(0, 0, 0, 0.2) ;
-    padding: 1rem ;
-    background-color: aquamarine;
-    color: black;
-}
-aside {
-    width: auto;
-    text-align: left;
-}
 aside h2 {
     position: relative;
     top:25px;
@@ -100,7 +111,7 @@ header , .grid, footer {
 }
 
 main {
-    grid-column: 2/3;
+    grid-column: 2;
     margin: 1rem;
     
 }
