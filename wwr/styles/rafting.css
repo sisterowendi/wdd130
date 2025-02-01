@@ -3,19 +3,22 @@
     --secondary-color: #ECA72C;
     --accent1-color: #EE5622;
     --accent2-color: #44355B;
-    --heading-font: "montserrat"
-        --paragraph-font: "lato";
-    --headline-color-on-white: #221E22;
-    --headline-color-on-color: #EE5622;
-    --paragraph-color-on-white: #44355B;
-    --paragraph-color-on-color: #ECA72C;
-    --paragraph-background-color: #221E22;
+    --heading-font: "Montserrat";
+    --paragraph-font: "lato";
     --nav-link-color: #221E22;
-    --nav-hover-link-color: white;
-    --nav-hover-background-color: #221E22;
+    background-color: #80868b;
+}
+
+body {
+    font-family: var(--paragraph-font);
+}
+h1,h2,h3 h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+
 }
 header,main,footer {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -32,7 +35,7 @@ nav {
 }
 nav a {
     padding: 1rem;
-    color: #fff;
+    color: white;
     font-family: var(--heading-font);
 
 }
@@ -60,15 +63,18 @@ a {
     position: absolute;
     text-align: center;
     top: 10px;
-    width: 100%;
-    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--primary-color);
     background-color: rgba(191, 230, 85, 0.6);
+    padding: 1rem;
+    
 }
 
 .hero article {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.65);
-    top: 6rem;
+    background-color: rgba(255, 255, 255, 0.55);
+    top: 10rem;
     left: 6rem;
     right: 6rem;
 
@@ -82,6 +88,9 @@ a {
 
 article p {
     color: #221E22;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .history{
@@ -120,6 +129,7 @@ article p {
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     justify-items: center;
+    column-span: all;
 }
 
 .adventure h2 {
@@ -142,18 +152,19 @@ figcaption {
     padding: 1em 0;
 }
 footer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    color:#fff;
+    justify-content:space between;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
     background-color: #ECA72C;
     margin-top: 100px;
 }
-footer p {
-    color: white;
-}
-footer nav a{
-    display: grid;
-    grid-template-columns: (2fr 1fr 1fr);
+.socials {
     grid-column: 3;
+    justify-self: end;
+}
+.socials img{
+    width: 3em;
 }
