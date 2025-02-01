@@ -155,7 +155,7 @@ footer {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     color:#fff;
-    justify-content:space between;
+    justify-content:space-between;
     align-items: center;
     padding: 2rem;
     background-color: #ECA72C;
