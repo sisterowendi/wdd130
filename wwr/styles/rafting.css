@@ -129,7 +129,6 @@ article p {
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     justify-items: center;
-    column-span: all;
 }
 
 .adventure h2 {
