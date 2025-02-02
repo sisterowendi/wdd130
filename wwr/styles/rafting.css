@@ -14,7 +14,7 @@ body {
 }
 h1,h2,h3 h4,h5,h6 {
     font-family: var(--heading-font);
-    color: var(--accent2-color);
+    color: var(--nav-link-color);
 
 }
 header,main,footer {
@@ -66,7 +66,7 @@ a {
     left: 50%;
     transform: translateX(-50%);
     color: var(--primary-color);
-    background-color: rgba(191, 230, 85, 0.6);
+    background-color: rgba(243, 245, 238, 0.50);
     padding: 1rem;
     
 }
@@ -127,8 +127,9 @@ article p {
     display: grid;
     margin: 50px 0;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
     justify-items: center;
+    gap: 0.1em;
+    align-items: center;
 }
 
 .adventure h2 {
@@ -157,7 +158,7 @@ footer {
     justify-content:space-between;
     align-items: center;
     padding: 2rem;
-    background-color: #ECA72C;
+    background-color: var(--primary-color);
     margin-top: 100px;
 }
 .socials {
