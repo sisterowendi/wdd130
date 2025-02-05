@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)https://byui-cse.github.io/wdd130-ww-course/week05/prepare-html-form.html -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 130 | HTML Forms</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://byui-cse.github.io/cse-ww-program/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://byui-cse.github.io/cse-ww-program/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="https://byui-cse.github.io/cse-ww-program/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./WDD 130 _ HTML Forms_files/course.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/vs2015.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="page">
+      <h1>WDD 130<span id="coursetitle">: Web Fundamentals</span></h1>
+      <img src="./WDD 130 _ HTML Forms_files/byui-logo.svg" alt="BYU-I logo" class="logo">
+    </div>
+  </header>
+
+  <main class="page">
+    <nav>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/">Home</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week01/">W1</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week02/">W2</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week03/">W3</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week04/">W4</a></span>
+      <span class="active"><a href="https://byui-cse.github.io/wdd130-ww-course/week05/">W5</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week06/">W6</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week07/">W7</a></span>
+    </nav>
+
+    <h2>HTML: The Form Element</h2>
+    <h3>Overview</h3>
+    <p>Forms allow us to interact with the user and collect data. The form element is the container for all form
+      elements and includes attributes that enable data processing. In this activity, you will only focus on the
+      frontend design and development, learning how to build a form using basic form elements. Processing the form data
+      after a submission is beyond the scope of this course.</p>
+
+    <div class="callout info">
+      <p>
+        "Web forms are one of the main points of interaction between a user
+        and a website or application. Forms allow users to enter data, which is generally sent to a
+        web server for processing and storage, or used on the client-side to immediately update the
+        interface in some way." - MDN
+      </p>
+    </div>
+
+    <h3>Prepare</h3>
+    <ul>
+      <li>Read the following sections from the article "<a href="https://xd.adobe.com/ideas/principles/web-design/best-practices-form-design/" target="_blank">Best
+          Practices for Form Design</a>":
+        <ol>
+          <li>The components of a form</li>
+          <li>Form structure</li>
+          <li>Input fields</li>
+        </ol>
+      </li>
+      <li>Read and Try It Yourself: <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank" rel="noopener">HTML Forms</a> - w3schools.com</li>
+      <li>Read: <a href="https://web.dev/learn/forms/form-fields/" target="_blank">"Help users enter data in forms"</a>
+        by Google Chrome Developer <strong>web.dev</strong>.<br>This article provides a helpful overview of the form
+        element and its attributes, which you will use in this activity.
+      </li>
+    </ul>
+
+    <h3>Activity Instructions</h3>
+    <h4 class="step">Getting Started</h4>
+    <ol>
+
+      <li>In the "<strong>week05</strong>" folder in your <strong>wdd130</strong> course repository,
+        create a new file named "<strong>poll-form.html</strong>".</li>
+      <li>Create a basic HTML page with a <code>header</code>, <code>main</code>, and
+        <code>footer</code>.
+        <details>
+          <summary>Check Your Understanding</summary>
+          <pre><code class="html hljs language-xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en-us"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>WDD 130 | HTML Form - User Poll<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>WDD 130 | Your Name | HTML Form - User Poll<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">main</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>©2025 | HTML Form - User Poll Activity | Your Name<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+        </details>
+
+      </li>
+    </ol>
+
+    <h4 class="step">Build the Form</h4>
+    <ol>
+      <li>Create a <code>form</code> element within the <code>main</code> element.</li>
+      <li>Within the <code>form</code>, include two (2)
+        <code><a href="https://web.dev/learn/forms/form-fields/#grouping-form-controls" target="_blank">fieldset</a></code>
+        elements with
+        <code><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend" target="_blank">legend</a></code>
+        child elements as shown in this example:
+        <pre><code class="html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">main</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Contact Information<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- form elements will go here --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Questions<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- form elements will go here --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span></code></pre>
+      </li>
+      <li>Add the following input content to the first, "Contact Information"
+        <code>fieldset</code>.<br>
+        Be sure to use the <code>label</code> element for each form element.
+        <ul class="check">
+          <li>User full name using <code>input</code> of type <code>text</code>, id of
+            <code>"fullname"</code> and name of <code>"fullname"</code>
+          </li>
+          <li>User email address using <code>input</code> of type <code>email</code>, an id of
+            <code>"useremail"</code>, and a name property value of <code>"useremail"</code>
+          </li>
+        </ul>
+        <details>
+          <summary>Check Your Understanding</summary>
+          <pre><code class="html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Contact Information<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"fullname"</span>&gt;</span>Full Name:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fullname"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fullname"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"useremail"</span>&gt;</span>Email:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"useremail"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"useremail"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre>
+          <div class="callout info">
+            <p>
+              Another valid way to write this is to surround the input elements with the label
+              element. This is called the "implicit label" method. The following is an example of this method:
+            </p><pre><code class="html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Contact Information<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Full Name: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fullname"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Email: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"useremail"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span></code></pre>
+            <p></p>
+          </div>
+        </details>
+      </li>
+      <li>Add the following input content to the second, "Questions" <code>fieldset</code>.<br>
+        Be sure to use a <code>label</code> element for each form element.
+        <ul class="check">
+          <li><em>"What is your favorite browser?"</em>
+            <br> Use a <code>select</code> element with three or more <code>options</code> and be sure to include
+            <code>values</code>. Provide a
+            <code>name</code> and <code>id</code> attribute and value of <code>"browser"</code>.
+          </li>
+          <li>"Do you have a household pet?"
+            <br> Use a single <code>checkbox</code> element. The <code>id</code> and <code>name</code> attribute value
+            is <code>"pet"</code>.
+          </li>
+          <li>"List the places you have lived."
+            <br> Use a <code>textarea</code> element and provide <code>placeholder</code> attribute values. In addition,
+            provide a <code>name</code> and <code>id</code> attribute value of <code>"feedback"</code> and set the
+            number of <code>rows</code>.
+          </li>
+        </ul>
+        <details>
+          <summary>Check Your Understanding</summary>
+          <pre><code class="html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Questions<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"browser"</span>&gt;</span>What is your favorite internet browser?<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"browser"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"browser"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"chrome"</span>&gt;</span>Chrome<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"firefox"</span>&gt;</span>Firefox<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"safari"</span>&gt;</span>Safari<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"edge"</span>&gt;</span>Edge<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"brave"</span>&gt;</span>Brave<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"other"</span>&gt;</span>Other<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"pet"</span>&gt;</span>Do you have a household pet?<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"pet"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"pet"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"feedback"</span>&gt;</span>List the places you have lived:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"feedback"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"feedback"</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span></code></pre>
+        </details>
+      </li>
+      <li>Add a <code>button</code> with a type of <code>submit</code> at the end of the form
+        element. The text content of the button is <code>"Submit Poll"</code>.
+        <details>
+          <summary>Check Your Understanding</summary>
+          <pre><code class="html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Submit Poll<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+
+          <div class="callout reference">Where should this <code>button</code> element be placed in
+            the HTML document?
+            <details>
+              <summary>Hint:</summary>
+              <p>Make sure it is within the <code>form</code> element.</p>
+            </details>
+          </div>
+        </details>
+
+      </li>
+    </ol>
+    <figure>
+      <img src="./WDD 130 _ HTML Forms_files/basic-form-screenshot.png" alt="Screenshot of Example Basic Form" loading="lazy" width="600">
+      <figcaption>Example poll form page. Note that this is not styled, just HTML structure.</figcaption>
+    </figure>
+
+    <h4 class="step">Testing and Submission</h4>
+    <ol>
+      <li>Test and validate your HTML in the browser.</li>
+      <li>Save your work. CSS styling will be added in the next activity.</li>
+    </ol>
+
+    <div class="callout info">
+      <p>
+        Note that this form does not include processing the user input. We are only working with the
+        frontend of the form design and structure. This scope of this course does not include the
+        processing of the data.
+      </p>
+    </div>
+
+    <hr>
+    <nav>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week05/index.html">Back</a></span>
+    </nav>
+
+  </main>
+
+  <footer>
+    <p>Copyright © Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="./WDD 130 _ HTML Forms_files/prevent-code-select.js.download"></script>
+
+
+</body></html>
