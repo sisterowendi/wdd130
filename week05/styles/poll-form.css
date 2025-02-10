@@ -38,6 +38,8 @@ fieldset {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 /0.2);
     padding: 1rem;
+    
+
 }
 
 
@@ -80,6 +82,7 @@ button {
 button:hover {
     background-color: darkcyan;
 }
+
 
 footer {
     margin: 1rem auto 0;
