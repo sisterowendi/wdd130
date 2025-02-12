@@ -139,7 +139,7 @@ article p {
 
 figure:nth-of-type(odd) {
     background-color: var(--accent1-color);
-    color: var(--nav-link-color);
+    color: black ;
     align-self: center;
 }
 figure:nth-of-type(even) {
@@ -207,6 +207,7 @@ figcaption {
     grid-column: 2/12;
     display: flex;
     gap: 2em;
+
     
 }
 .signup {
