@@ -75,7 +75,7 @@ a {
     transform: translateX(-50%);
     color: var(--primary-color);
     background-color: rgba(255, 255, 255, 0.55);
-    font-style: bold;
+    font-style: normal;
     font-size: 30px;
     padding: 1rem;
 }
@@ -98,7 +98,7 @@ a {
     text-align: center;
     top: 80px;
     left: 40%;
-    color: 000;
+    color: #000;
     padding: 1rem;
 }
 .overlay button {
@@ -298,8 +298,7 @@ figcaption {
     font-size: 20px;
 }
 .message {
-    display: flex;
-    columns: 2/7;  
+    display: flex; 
 }
 .message img {
     position: relative;
@@ -309,7 +308,7 @@ figcaption {
     position: relative;
     width: 20rem;
     margin:auto;
-    border: 1px solid rgba(black);
+    border: 1px ;
     padding: 1rem;
     background-color:rgba(231, 133, 21, 0.646);
     color: black;
@@ -396,7 +395,7 @@ input[type=checkbox]{
     margin-top: 16px;
 }
 input[type=submit] {
-    background-color: 04AA6D;
+    background-color:#04AA6D;
     color: #fff;
     border:none;
 
