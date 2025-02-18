@@ -351,8 +351,8 @@ footer p {
 
 button {
     width: 205px;
-    background-color: rgb(234, 72, 13);
-    color:#fff;
+    background-color: white;
+    color:#221E22;
     padding: 1em;
     justify-self: center;
     margin: 30px;
