@@ -289,7 +289,9 @@ figcaption {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    font-size: ;
 }
+
 .submit {
     padding: 0.1rem;
     background-color: var(--accent1-color);
@@ -349,12 +351,16 @@ footer p {
 
 button {
     width: 205px;
-    background-color: white;
-    color:#221E22;
+    background-color: greenyellow;
+    color: black;
     padding: 1em;
     justify-self: center;
     margin: 30px;
     border-radius: 20px;
+}
+.grid button {
+    background-color: greenyellow;
+    color: black;
 }
 .services {
     display: flex;
